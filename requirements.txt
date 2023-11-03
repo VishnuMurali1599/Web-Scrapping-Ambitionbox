@@ -1,0 +1,7 @@
+flask
+beautifulsoup4
+pandas
+numpy
+requests
+mysql
+mysql-connector
