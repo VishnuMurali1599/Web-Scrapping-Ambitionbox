@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Reviews</div>
+
+   <table cellspacing="0">
+      <tr>
+         <th>Company_Name</th>
+         <th>Ratings</th>
+         <th>Company_type</th>
+         <th>Total_Employee</th>
+         <th>Sector</th>
+         <th>Total_Years</th>
+         <th>Head_Quaters</th>
+         <th>Total_Review_Count</th>
+         <th>Avg_Salaries</th>
+         <th>Avg_interview</th>
+         <th>Avg_Jobs</th>
+         <th>Benifits</th>
+         
+      </tr>
+         {% for review in reviews %}
+      <tr>
+          <td>{{review['Company_Name']}}</td>
+         <td>{{review['Ratings']}}</td>
+         <td>{{review['Company_type']}}</td>
+         <td>{{review['Total_Employee']}}</td>
+         <td>{{review['Sector']}} </td>
+         <td>{{review['Total_Years']}}</td>
+         <td>{{review['Head_Quaters']}}</td>
+         <td>{{review['Total_Review_Count']}}</td>
+         <td>{{review['Avg_Salaries']}}</td>
+         <td>{{review['Avg_interview']}} </td>
+         <td>{{review['Avg_Jobs']}}</td>
+         <td>{{review['Benifits']}} </td>
+
+
+       {% endfor %}
+   </table>
+</div>
+
+
+
+</body>
+
+</html>
+

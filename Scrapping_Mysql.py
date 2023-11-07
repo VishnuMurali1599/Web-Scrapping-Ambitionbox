@@ -18,7 +18,7 @@ Total_Years=[]
 Head_Quaters=[]
 
 
-for page in range(1,11):
+for page in range(1,10):
     headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win 64 ; x64) Apple WeKit /537.36(KHTML , like Gecko) Chrome/80.0.3987.162 Safari/537.36'}
     url=f"https://www.ambitionbox.com/list-of-companies?page={page}"
     webpage=requests.get(url,headers=headers).text
@@ -111,17 +111,26 @@ print(df)
 
 ##-------------------------- Connecting To My SQL -----------------------------------
 
-#mydb=connection.connect(host="localhost", user="root", passwd="Vishnu@1234567890")
-#print(mydb)
-#cursor=mydb.cursor()
-#print(cursor)
+mydb=connection.connect(host="localhost", user="root", passwd="Vishnu@1234567890")
+print(mydb)
+cursor=mydb.cursor()
+print(cursor)
 
 #cursor.execute("show databases")
 
 #cursor.execute("create database Company_Details")
 
-#cursor.execute("create table if not exists company_details.review (company_name varchar(50),Ratings float,company_type varchar(50),Total_Employees varchar(30),Sector varchar(30),Total_Years varchar(30),Head_Quaters varchar(30),Total_Review_Count varchar(30),Avg_Salaries varchar(30),Avg_interview varchar(30),Avg_Jobs varchar(30),Benifits varchar(30))")
+"""cursor.execute("create table if not exists company_details.review (company_name varchar(50),
+               Ratings float,company_type varchar(50),Total_Employees varchar(30),Sector varchar(30),
+               Total_Years varchar(30),Head_Quaters varchar(30),Total_Review_Count varchar(30),
+               Avg_Salaries varchar(30),Avg_interview varchar(30),Avg_Jobs varchar(30)
+               ,Benifits varchar(30))")"""
+
 #cursor.execute("select * from company_details.review ")
-#for i in cursor.fetchall():
-    #print(i)
+
+cursor.execute("select * from company_details.review  where  Company_Name='TCS' ")
+for i in cursor.fetchall():
+    print(i)
+    
+    
 

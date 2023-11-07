@@ -5,3 +5,4 @@ numpy
 requests
 mysql
 mysql-connector
+pymongo
