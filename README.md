@@ -14,7 +14,7 @@ Develop a MySQL and Mongo DB database to store the data.
 Develop a Streamlit web application to provide users with a user-friendly interface to explore and query the data.
 Project Outcomes
 
-![Project Image](images/Screenshot (424).png.png)
+(images/Screenshot (424).png)
 
 
 
