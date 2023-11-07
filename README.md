@@ -14,8 +14,9 @@ Develop a MySQL and Mongo DB database to store the data.
 Develop a Streamlit web application to provide users with a user-friendly interface to explore and query the data.
 Project Outcomes
 
-(images/Screenshot (424).png)
 
+
+![Screenshot (424)](https://github.com/VishnuMurali1599/Web-Scrapping-Ambitionbox/assets/133478960/1e4a1768-cb0a-45fd-bb3e-5d4b78a4c52e)
 
 
 #### The benefits of this project are:
