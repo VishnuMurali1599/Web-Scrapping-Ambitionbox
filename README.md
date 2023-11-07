@@ -35,22 +35,23 @@ Display of company information including headquarters, job statistics, interview
 
 #### Prerequisites
 
-Python 3.x
-Streamlit
-Beautiful Soup for web scraping
-PyMongo for MongoDB integration
-MySQL database
+1.Python 3.x
+2.Streamlit
+3.Beautiful Soup for web scraping
+4.PyMongo for MongoDB integration
+5.MySQL database
 
 #### Setup and Installation
 
-Clone this repository to your local machine.
-Install the required Python packages: pip install -r requirements.txt.
-Ensure you have MongoDB and MySQL set up and configured.
-Usage
-Run the Streamlit application: streamlit run app.py.
-Enter a company name in the input field.
-Click the Filter Data  button.
-The application will display the requested company information.
+1.Clone this repository to your local machine.
+2.Install the required Python packages: pip install -r requirements.txt.
+3.Ensure you have MongoDB and MySQL set up and configured.
+
+#### Usage
+1.Run the Streamlit application: streamlit run app.py.
+2.Enter a company name in the input field.
+3.Click the Filter Data  button.
+   The application will display the requested company information.
 
 ### Conclusion
 
